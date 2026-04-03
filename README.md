@@ -2,81 +2,94 @@
 
 [![Stars](https://img.shields.io/github/stars/adminsairolotech-bit/everything-claude-code?style=flat)](https://github.com/adminsairolotech-bit/everything-claude-code/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Repo Language](https://img.shields.io/github/languages/top/adminsairolotech-bit/everything-claude-code)](https://github.com/adminsairolotech-bit/everything-claude-code)
-[![Last Commit](https://img.shields.io/github/last-commit/adminsairolotech-bit/everything-claude-code)](https://github.com/adminsairolotech-bit/everything-claude-code/commits/main)
+[![Top Language](https://img.shields.io/github/languages/top/adminsairolotech-bit/everything-claude-code)](https://github.com/adminsairolotech-bit/everything-claude-code)
 
-The **agent harness performance optimization system** for modern coding assistants.
+A practical **agent harness performance optimization system** for modern coding assistants.
 
-This repository curates and packages practical methods for improving AI coding workflows across **Claude Code, Codex, Opencode, Cursor, and similar agent-driven environments**—with a focus on **skills, instincts, memory, security, and research-first development**.
-
----
-
-## What this project provides
-
-- **Agent performance optimization patterns** for day-to-day engineering tasks  
-- **Reusable skill frameworks** to improve reliability and output quality  
-- **Memory and context strategies** for long-running or multi-step tasks  
-- **Security-aware workflows** for safer agent usage in real repositories  
-- **Research-first development guidance** to reduce hallucinations and improve factual grounding  
-- **Cross-tool compatibility** (Claude Code and beyond)
+This repository collects reusable workflows, skills, and operating patterns to improve day-to-day results with **Claude Code, Codex, Opencode, Cursor, and similar agent-driven tools**—with emphasis on **skills, instincts, memory, security, and research-first development**.
 
 ---
 
-## Quick start
+## Why this repository exists
 
-Since this repository is a multi-language toolkit/knowledge base, setup depends on which component you use.
+AI coding assistants are powerful, but output quality depends heavily on how you structure tasks, context, verification, and safety boundaries.  
+This project is a centralized toolkit for making agent workflows:
+
+- More reliable
+- More secure
+- More reproducible
+- Easier to scale across teams and tools
+
+---
+
+## Key features
+
+- **Agent performance optimization patterns** for common engineering tasks
+- **Reusable skill frameworks** to improve consistency and output quality
+- **Memory/context strategies** for long-running and multi-step work
+- **Security-aware operating practices** for safer usage in real repositories
+- **Research-first development workflows** to reduce hallucinations and improve factual grounding
+- **Cross-tool compatibility** across Claude Code and adjacent assistant ecosystems
+- **Multi-language examples and assets** (e.g., Shell, TypeScript, Python, Go, Java, Perl, Markdown)
+
+---
+
+## Project structure (high level)
+
+This repository is organized as a toolkit/knowledge base. Depending on the version/branch, you may find:
+
+- Prompt and skill assets
+- Agent workflow templates
+- Security-oriented utilities and guidance
+- Language-specific examples
+- Documentation for implementation and adaptation
+
+---
+
+## Installation
+
+Because this is a multi-language repository, there is no single global install command. Start by cloning and selecting the component(s) you need.
 
 ### 1) Clone the repository
 
 git clone https://github.com/adminsairolotech-bit/everything-claude-code.git
 cd everything-claude-code
 
-### 2) Explore the project structure
+### 2) Inspect available components
 
-Look through top-level directories and docs to find:
-- Prompt/skill assets
-- Agent workflow templates
-- Security utilities
-- Language-specific examples (Shell, TypeScript, Python, Go, Java, Perl, Markdown)
+Browse top-level directories and docs to identify:
+- Skill packs / prompt assets
+- Workflow templates
+- Security checklists/tools
+- Language-specific examples
 
-### 3) Use with your agent tool
+### 3) Install per component (if required)
 
-Apply the included instructions/assets inside your preferred toolchain:
-- Claude Code
-- Codex-based workflows
-- Cursor
-- Opencode
-- Other AI-assisted dev environments
+Use the relevant package manager/tooling based on each module:
 
----
-
-## Installation notes (language/tooling)
-
-Some modules may require local runtimes depending on the script/package:
-
-- **Shell**: bash/zsh-compatible terminal
-- **TypeScript/Node.js**: Node 18+ recommended
-- **Python**: Python 3.10+ recommended
-- **Go**: Go 1.21+ recommended
-- **Java**: JDK 17+ recommended
-- **Perl**: modern Perl runtime if used by selected scripts
-
-If a subdirectory contains its own setup file (`package.json`, `requirements.txt`, `go.mod`, etc.), install dependencies there before use.
+- **Node/TypeScript**: `npm install` or `pnpm install`
+- **Python**: `pip install -r requirements.txt` (if present)
+- **Go**: `go mod tidy`
+- **Shell/Markdown assets**: usually no install required
 
 ---
 
-## Usage patterns
+## Usage
 
-Typical ways to use this repository:
+Usage depends on your target assistant and workflow model. A recommended approach:
 
-1. **As a reference library**  
-   Copy/adapt best practices for prompting, planning, validation, and code review loops.
+1. Choose a workflow template or skill asset aligned to your task
+2. Adapt context inputs (repo scope, constraints, acceptance criteria)
+3. Apply research-first checks before implementation
+4. Run security and validation steps before merging
+5. Save improvements back into your local playbook/process
 
-2. **As an internal standards base**  
-   Build team conventions for agent-assisted coding, including security checkpoints.
+### Typical use cases
 
-3. **As a workflow accelerator**  
-   Reuse templates for repeated tasks: feature implementation, refactor plans, test generation, and documentation.
+- Improving agent reliability for feature implementation
+- Standardizing prompt/skill quality across a team
+- Running safer AI-assisted development in production repos
+- Managing long-horizon tasks with explicit memory/context strategies
 
 ---
 
@@ -86,22 +99,21 @@ Contributions are welcome.
 
 ### How to contribute
 
-1. Fork the repository  
+1. Fork the repository
 2. Create a feature branch  
-   - `git checkout -b feat/your-improvement`
-3. Make your changes (docs, scripts, examples, fixes)  
+   `git checkout -b feature/your-change`
+3. Make your changes (docs, templates, examples, workflows)
 4. Commit with clear messages  
-5. Open a Pull Request describing:
-   - What changed
-   - Why it helps
-   - Any compatibility or security impact
+   `git commit -m "Add: <short description>"`
+5. Push and open a Pull Request
 
 ### Contribution guidelines
 
-- Keep changes practical and reproducible
-- Prefer clear, minimal, testable examples
-- Maintain security-first and research-first principles
-- Update documentation when behavior changes
+- Keep changes practical and implementation-oriented
+- Prefer reusable patterns over one-off prompts
+- Include clear documentation and examples
+- Preserve security-first and research-first principles
+- Respect licensing and source attribution when adding external content
 
 ---
 
