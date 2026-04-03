@@ -4,140 +4,124 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Top Language](https://img.shields.io/github/languages/top/adminsairolotech-bit/everything-claude-code)](https://github.com/adminsairolotech-bit/everything-claude-code)
 
-A practical **agent harness performance optimization system** for modern coding assistants.
+A practical, cross-tool **agent harness performance optimization system** for modern AI coding workflows.
 
-This repository provides reusable workflows, skill packs, memory/context strategies, security practices, and research-first development patterns to improve outcomes with **Claude Code, Codex, Opencode, Cursor, and similar AI coding agents**.
+This repository helps you build more reliable agent-driven development using reusable skills, context/memory patterns, security-first operating practices, and research-first execution for **Claude Code, Codex, Opencode, Cursor, and related assistants**.
 
 ---
 
 ## Why this project exists
 
-AI coding assistants are only as effective as the system around them—task framing, context management, verification loops, and safety constraints.
+AI coding agents perform best when they run inside a strong operating system: clear task framing, high-quality context, verification loops, and explicit safety constraints.
 
-**Everything Claude Code** exists to make agent-driven development:
-
-- More reliable
-- More secure
-- More reproducible
-- Easier to scale across individuals and teams
-- Better grounded in research and evidence
+**Everything Claude Code** provides that system so teams and individuals can ship with more confidence and consistency.
 
 ---
 
-## Key features
+## Key Features
 
-- **Agent performance optimization patterns** for common engineering workflows
-- **Reusable skill frameworks** for consistency across tasks and tools
-- **Memory/context management strategies** for long-running, multi-step work
-- **Security-first operating practices** for safer execution in real repositories
-- **Research-first development workflows** to reduce hallucinations and improve factual accuracy
-- **Cross-tool compatibility** across Claude Code and adjacent ecosystems
-- **Template-driven approach** for repeatable setup and team onboarding
-- **Multi-language assets and examples** (JavaScript, Shell, TypeScript, Python, Go, Java, Perl, Markdown, and more)
-
----
-
-## Project structure (high level)
-
-Depending on branch/version, this repository may include:
-
-- Prompt and skill assets
-- Agent workflow templates
-- Security-oriented guardrails/utilities
-- Memory and context pattern libraries
-- Research and validation checklists
-- Tool-specific integration notes
+- **Agent performance optimization patterns** for common engineering tasks
+- **Reusable skill packs and workflows** for consistency across projects
+- **Memory/context management strategies** for long-running multi-step work
+- **Security-first guardrails** for safer execution in real repositories
+- **Research-first development flow** to reduce hallucinations and improve factual accuracy
+- **Cross-tool compatibility** across Claude Code and adjacent AI coding tools
+- **Template-driven structure** for repeatable setup and faster onboarding
+- **Polyglot-ready assets** (JavaScript-first, with support patterns for other stacks)
 
 ---
 
 ## Installation
 
-This repository is primarily a **workflow + assets toolkit**.  
-You can use it directly in any project without a package publish step.
+### Prerequisites
 
-### 1) Clone the repository
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/) 18+ (recommended)
+- npm (bundled with Node.js)
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/adminsairolotech-bit/everything-claude-code.git
 cd everything-claude-code
 ```
 
-### 2) (Optional) Install JavaScript dependencies
+### Install dependencies
 
-If the current branch includes Node tooling/scripts:
+If a `package.json` is present:
 
 ```bash
 npm install
 ```
 
-or
-
-```bash
-yarn install
-```
-
-### 3) Explore and apply assets
-
-- Copy relevant templates/skills into your own repo
-- Adapt prompts and execution patterns to your assistant/tool
-- Use security and verification checklists before applying generated code
-- Run your standard tests/linting for validation
+If the repository is primarily templates/docs/prompts, you can skip dependency installation and start using the assets directly.
 
 ---
 
 ## Usage
 
-A typical usage flow:
+Because this repository is a harness/framework, usage is modular. Start with the workflow below:
 
-1. **Pick a workflow/skill** matching your task (feature build, refactor, debugging, research, etc.)
-2. **Prepare context** (requirements, constraints, architecture, acceptance criteria)
-3. **Run with guardrails** (security boundaries, validation gates, source-checking)
-4. **Verify outputs** (tests, static analysis, manual review, reproducibility checks)
-5. **Store learnings** in your team’s memory/context system for future tasks
+1. **Choose a target tool** (Claude Code, Codex, Cursor, Opencode, etc.).
+2. **Select a skill/workflow template** relevant to your task (feature build, refactor, review, debugging, research).
+3. **Inject project context** (requirements, constraints, architecture, coding standards).
+4. **Apply security and verification loops** (tests, static checks, output review).
+5. **Capture outcomes in memory/context artifacts** for iterative improvement.
 
-### Recommended best practices
+### Suggested baseline flow
 
-- Keep prompts and instructions versioned in your repository
-- Prefer smaller, testable steps over large one-shot generations
-- Require source-backed reasoning for non-trivial claims
-- Treat generated code as untrusted until validated
-- Use branch/PR workflows with explicit review checkpoints
+- Define task goal and acceptance criteria
+- Attach minimal but sufficient context
+- Run agent with constrained instructions
+- Validate outputs with tests/checklists
+- Record learnings and improve the next run
+
+### Optional local scripts
+
+If available in `package.json`, run:
+
+```bash
+npm run lint
+npm test
+npm run build
+```
+
+(Use only scripts that exist in the repository.)
+
+---
+
+## Recommended Team Adoption
+
+- Start with one high-value workflow (e.g., bugfix or PR review)
+- Standardize one skill pack per team function
+- Add a mandatory verification checklist before merge
+- Track failure modes and improve prompts/templates weekly
 
 ---
 
 ## Contributing
 
-Contributions are welcome. If you want to improve this toolkit:
+Contributions are welcome.
+
+### How to contribute
 
 1. Fork the repository
-2. Create a new branch
-   - `feat/<short-name>` for features
-   - `fix/<short-name>` for fixes
-   - `docs/<short-name>` for documentation updates
-3. Make focused, well-scoped changes
-4. Add or update examples/templates where relevant
-5. Open a Pull Request with:
-   - Problem statement
-   - Proposed approach
-   - Usage notes
-   - Any tradeoffs/limitations
+2. Create a feature branch:
+   - `git checkout -b feat/your-change`
+3. Make your changes (docs, templates, scripts, workflows)
+4. Run relevant checks/tests
+5. Commit with clear messages
+6. Push branch and open a Pull Request
 
 ### Contribution guidelines
 
-- Keep patterns practical and tool-agnostic where possible
-- Prioritize security, reproducibility, and clarity
-- Include concise documentation for new assets
-- Avoid adding unverified claims or unsafe defaults
+- Keep changes practical and reusable
+- Prefer explicit, testable instructions over vague prompts
+- Include examples for new workflows
+- Preserve security-first and research-first principles
+- Update documentation when behavior or structure changes
 
----
-
-## Roadmap (suggested direction)
-
-- Expanded reference workflows by task type
-- Better tool-specific adapters (Claude Code, Codex, Cursor, etc.)
-- More validation templates (testing, audit, compliance)
-- Team-oriented memory/context blueprints
-- Benchmarked examples for performance and quality comparison
+For major changes, open an issue first to discuss scope and design.
 
 ---
 
